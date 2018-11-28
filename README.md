@@ -27,3 +27,15 @@ testButton.grid(row = 1, column = 0)
 
 my2048 = BasicGui()
 my2048.run()
+
+class my2048Gamequit()
+
+    def __init__(self):
+        self.rootWin = tk.Tk()
+
+        quitButton = tk.Button(self.rootWin, text="Quit", command=self.doQuit)
+        quitButton.grid(row=25, column=25, padx=10, pady=10)
+    def doQuit(self):
+      self.rootWin.destroy()
+    def run(self):
+        self.rootWin.mainloop()
